@@ -1,0 +1,16 @@
+$('.bio-more').click(function(){
+	if ($(this).siblings('.bio-long').hasClass('d-none')) {
+		this.innerHTML = "Read Less <i class='fas fa-lg fa-angle-up'></i>";
+		$(this).siblings('.bio-short').removeClass('d-inline');
+		$(this).siblings('.bio-short').addClass('d-none');
+		$(this).siblings('.bio-long').addClass('d-inline');
+		$(this).siblings('.bio-long').removeClass('d-none');
+	}
+	else {
+		this.innerHTML = "Read More <i class='fas fa-lg fa-angle-down'></i>";
+		$(this).siblings('.bio-long').removeClass('d-inline');
+		$(this).siblings('.bio-long').addClass('d-none');
+		$(this).siblings('.bio-short').addClass('d-inline');
+		$(this).siblings('.bio-short').removeClass('d-none');
+	}  
+});

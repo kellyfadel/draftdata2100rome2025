@@ -1,0 +1,60 @@
+main .container{ /* Adding top and bottom margin to every page's container */
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.jumbotron-overlay{ /* Removing the overlay on our default page banners since we DO NOT use banner text */
+	opacity:0;
+}
+
+.carousel-caption{ /* Removes the default text from the default page banners since we DO NOT use banner text */
+	opacity:0;
+}
+
+.huntsman-event{ /* Custom styling for a huntsman event block. Adds padding/margins and blue left border */
+	border-left: 7px solid #226BAA;
+	padding: 0px;
+	padding-left: 20px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/*** Homepage Calendar ***/
+.home-calendar .media-body{ /* Adjusts home page calendar text to be white */
+	color:white;
+}
+.home-calendar .media-body a{ /* Adjusts links in home page calendar to be white */
+	color: white;
+}
+.home-calendar p{ /* hides p tags on the home page calendar */
+	display:none;
+}
+
+/*** Directory Bio ***/
+.bio-more { /* adjusts the show more on directory bios */
+	cursor: pointer;
+	color: #226BAA;
+}
+
+/*** Magazine Styles ***/
+.magazine p.text-gray-darker { /* hides the magazine feed component's date/author */
+	display: none;
+}
+.magazine .overlay-border { /* changes the color of the magazine feed component's color bar from orange to blue */
+	border-bottom: 5px solid #226BAA !important;
+}
+
+/*** Index Search - Already know what you are looking for section - hides the default search bar (we add a custom one using assets) ***/
+.index-search button#loadMore {
+	display: none;
+}
+.index-search span form.form-horizontal {
+	display:none;
+}
+.index-search div.card-news{
+	display:none;
+}
+.table-sm td, .table-sm th { /* increases the default padding on tables */
+	padding-left: 10px;
+	padding-right: 10px;
+}
